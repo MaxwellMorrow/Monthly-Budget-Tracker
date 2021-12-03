@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         body {
+            text-align: center;
+        
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            border: 2px solid black;
+            border-collapse: separate;
+            border-spacing: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>Static Bill Tracker</h1>
@@ -17,33 +31,34 @@
         </tr>
         <tr>
             <td>Mortgage</td>
-            <td>1183.31</td>
-            <td>591.65</td>
-            <td>12/1</td>
+            <td id ="mortgageAmt"></td>
+            <td id="mortgageAmtH"></td>
+            <td id="mortgageDue">12/1</td>
+        
         </tr>
         <tr>
             <td>Hoa</td>
-            <td>68.25</td>
-            <td>34.12</td>
-            <td></td>
+            <td id="hoaAmt"></td>
+            <td id="hoaAmtH"></td>
+            <td id="hoaDue">12/1</td>
         </tr>
         <tr>
             <td>Internet</td>
-            <td>92.99</td>
-            <td>46.49</td>
-            <td></td>
+            <td id="internetAmt"></td>
+            <td id="internetAmtH"></td>
+            <td id="internetDue">12/16</td>
         </tr>
         <tr>
             <td>Phone</td>
-            <td>120</td>
-            <td>60</td>
-            <td></td>
+            <td id="phoneAmt"></td>
+            <td id="phoneAmtH"></td>
+            <td id="phoneDue">12/18</td>
         </tr>
         <tr>
             <td>Trash</td>
-            <td>49.60</td>
-            <td>24.80</td>
-            <td></td>
+            <td id="trashAmt"></td>
+            <td id="trashAmtH"></td>
+            <td id="trashDue">12/20</td>
         </tr>
     </table>
 <h1>Fluctuating Bill Tracker</h1>
@@ -53,25 +68,41 @@
         <th>Amount</th>
         <th>Halved</th>
         <th>Due</th>
+        <th>Set Amount</th>
     </tr>
     <tr>
         <td>Energy</td>
-        <td>99.73</td>
-        <td>49.86</td>
-        <td></td>
+        <td id="energyAmt"></td>
+        <td id="energyAmtH"></td>
+        <td id="energyDue">12/23</td>
+        <td><button id="energyAmtBtn">Set</button></td>
     </tr>
     <tr>
         <td>Water</td>
-        <td>57.44</td>
-        <td>28.72</td>
-        <td></td>
+        <td id="waterAmt"></td>
+        <td id="waterAmtH"></td>
+        <td id="waterDue">12/23</td>
+        <td><button id="waterAmtBtn">Set</button></td>
     </tr>
     <tr>
         <td>Gas</td>
-        <td>25.66</td>
-        <td>12.83</td>
-        <td></td>
+        <td id="gasAmt"></td>
+        <td id="gasAmtH"></td>
+        <td id="gasDue">12/22</td>
+        <td><button id="gasAmtBtn">Set</button></td>
     </tr>
 </table>
+<h1>Totals</h1>
+<table>
+    <tr>
+        <th>Total Bills</th>
+        <th>Halved Total</th>
+    </tr>
+    <tr>
+        <td id="totalAmtCell"></td>
+        <td id="totalAmtHalvedCell"></td>
+    </tr>
+</table>
+<script src="script.js"></script>
 </body>
 </html>
