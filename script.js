@@ -65,24 +65,7 @@ gasAmtCellH.textContent = gasAmt / 2
 totalAmtCell.textContent = mortgageAmt + hoaAmt + internetAmt + phoneAmt + trashAmt + energyAmt + waterAmt + gasAmt
 totalAmtCellH.textContent = (mortgageAmt + hoaAmt + internetAmt + phoneAmt + trashAmt + energyAmt + waterAmt + gasAmt) / 2 
 }
-mortgageAmtCell.textContent = mortgageAmt
-mortgageAmtCellH.textContent = mortgageAmt / 2 
-hoaAmtCell.textContent = hoaAmt
-hoaAmtCellH.textContent = hoaAmt / 2 
-internetAmtCell.textContent = internetAmt
-internetAmtCellH.textContent = internetAmt / 2
-phoneAmtCell.textContent = phoneAmt
-phoneAmtCellH.textContent = phoneAmt / 2
-trashAmtCell.textContent = trashAmt
-trashAmtCellH.textContent = trashAmt / 2
-energyAmtCell.textContent = energyAmt
-energyAmtCellH.textContent = energyAmt / 2
-waterAmtCell.textContent = waterAmt
-waterAmtCellH.textContent = waterAmt / 2
-gasAmtCell.textContent = gasAmt
-gasAmtCellH.textContent = gasAmt / 2
-totalAmtCell.textContent = mortgageAmt + hoaAmt + internetAmt + phoneAmt + trashAmt + energyAmt + waterAmt + gasAmt
-totalAmtCellH.textContent = (mortgageAmt + hoaAmt + internetAmt + phoneAmt + trashAmt + energyAmt + waterAmt + gasAmt) / 2 
+setAmt()
 
 // energy amount button  event listener
 energyAmtSet.addEventListener("click", function()
